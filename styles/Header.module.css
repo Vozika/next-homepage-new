@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 63px;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .main {
+        margin-bottom: 126px;
+    }
+}

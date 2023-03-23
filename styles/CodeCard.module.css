@@ -1,0 +1,51 @@
+.main {
+    background-color: rgb(var(--secondary-rgb));
+    padding: 32px;
+    height: calc(100% - 70px);
+}
+
+.line {
+    background-color: rgb(var(--primary-rgb));
+    background-image: linear-gradient(120deg, rgb(var(--primary-rgb)) 0%, var(--primary-light) 100%);
+    height: 6px;
+}
+
+.tech_icons_container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icons_container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.icons_container_block {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container h1 {
+    transition: .2s
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.container:hover h1 {
+    color: rgb(var(--primary-rgb));
+}
+
+.container:hover .line {
+    background-color: rgb(var(--primary-rgb));
+    background-image: linear-gradient(-120deg, rgb(var(--primary-rgb)) 0%, var(--primary-light) 100%);
+}
