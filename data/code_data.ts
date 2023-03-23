@@ -71,7 +71,7 @@ const code_data: Code[] = [
     title: "Home Sweet Home 2.0",
     text: "Второй, улучшенный вариант моего сайта-портфолио, того самого сайта, на котором вы сейчас находитесь. Отличается от первой версии многостраничностью и улучшенной навигацией. Сделан на Next JS и Typescript, кое-где есть немного Material UI.",
     url: "../../",
-    github_url: "next-homepage",
+    github_url: "next-homepage-new",
     tech: {
       css: true,
       next: true,

@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
-import { Inter } from "@next/font/google";
+import { Oswald, Inter } from "@next/font/google";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["cyrillic", "latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.className}>
+    <main className={font.className}>
       <Layout>
         <Script id="metrika" strategy="afterInteractive">
           {`<!-- Yandex.Metrika counter -->
