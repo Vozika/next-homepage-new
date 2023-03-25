@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedLine from "../components/AnimatedLine";
+import Hero3D from "../components/Hero3D";
 
 const variants = {
   initial: { opacity: 0, scale: 0, x: "100vw" },
@@ -117,6 +118,9 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </motion.div>
+        <br />
+
+        <Hero3D animateLetter={animateLetterFirst} />
 
         <div className={styles.line}></div>
       </main>
