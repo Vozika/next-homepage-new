@@ -118,7 +118,7 @@ const PictureCard = ({ url, title, description }: Props) => {
 
           <Image
             src={url}
-            alt="Logo"
+            alt="Picture"
             fill={true}
             className={styles.image}
             sizes="(max-width: 800px) 100vw, (max-width: 1200px) 25vw, 33vw"
