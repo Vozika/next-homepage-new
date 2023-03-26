@@ -10,6 +10,19 @@
   width: 100%;
 }
 
+.hero_container {
+  position: relative;
+  height: fit-content;
+  display: flex;
+}
+
+.hero_animation {
+  position: absolute;
+  top: 0;
+  left: 5.5em;
+  z-index: 100;
+}
+
 .line {
   background-color: rgb(var(--primary-rgb));
   background-image: linear-gradient(120deg, rgb(var(--primary-rgb)) 0%, var(--primary-light) 100%);
@@ -24,7 +37,7 @@
   font-size: 7vw;
   margin: 0;
   padding: 0;
-  
+
 }
 
 .second_line {
@@ -35,7 +48,7 @@
   margin: 0;
   padding: 0;
   color: rgb(var(--primary-rgb));
-  
+
 }
 
 .third_line {
@@ -44,7 +57,7 @@
   font-size: 3vw;
   margin-top: 1rem;
   padding: 0;
-  
+
 }
 
 .forth_line {

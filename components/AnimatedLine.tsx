@@ -60,7 +60,7 @@ const AnimatedLine = ({
               animate={{
                 scale:
                   animateLetter && character.id === getRandomInt(line.length)
-                    ? 2
+                    ? 1.3
                     : 1,
                 x: 0,
               }}
@@ -68,7 +68,7 @@ const AnimatedLine = ({
                 scale: { type: "spring", stiffness: 300 },
               }}
               whileHover={{
-                scale: 0.5,
+                scale: 0.8,
                 color: primaryColor,
               }}
               onHoverStart={(e) => {

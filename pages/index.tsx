@@ -60,67 +60,75 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <motion.div
-          className={styles.hero}
-          variants={variants}
-          initial="initial"
-          animate="animate"
-        >
-          <AnimatedLine
-            line={firstLine}
-            animateLetter={animateLetterFirst}
-            setAnimateLetter={setAnimateLetterFirst}
-            css={styles.first_line}
-            foregroundColor={foregroundColor}
-            primaryColor={primaryColor}
-          />
-
-          <br />
-
-          <AnimatedLine
-            line={secondLine}
-            animateLetter={animateLetterSecond}
-            setAnimateLetter={setAnimateLetterSecond}
-            css={styles.second_line}
-            foregroundColor={primaryColor}
-            primaryColor={foregroundColor}
-          />
-
-          <br />
-
-          <AnimatedLine
-            line={thirdLine}
-            animateLetter={animateLetterThird}
-            setAnimateLetter={setAnimateLetterThird}
-            css={styles.third_line}
-            foregroundColor={foregroundColor}
-            primaryColor={primaryColor}
-          />
-
-          <motion.div variants={variants4}>
+        <div className={styles.hero_container}>
+          <div className={styles.hero_animation}>
             <motion.div
-              transition={{ scale: { type: "spring", stiffness: 500 } }}
-              className={styles.forth_line}
-              initial={{
-                backgroundColor: "rgb(var(--secondary-dark-rgb)",
-                color: "rgb(var(--foreground-rgb))",
-                scale: 1,
-                x: 0,
-              }}
-              whileHover={{
-                color: "rgb(var(--light-rgb))",
-                backgroundColor: "rgb(var(--primary-rgb))",
-                scale: 1.2,
-                x: 10,
-              }}
+              className={styles.hero}
+              variants={variants}
+              initial="initial"
+              animate="animate"
             >
-              <Link href={"about"}>и другое</Link>
-            </motion.div>
-          </motion.div>
-        </motion.div>
-        <br />
+              <Link href={"code"}>
+                <AnimatedLine
+                  line={firstLine}
+                  animateLetter={animateLetterFirst}
+                  setAnimateLetter={setAnimateLetterFirst}
+                  css={styles.first_line}
+                  foregroundColor={foregroundColor}
+                  primaryColor={primaryColor}
+                />
+              </Link>
 
-        <Hero3D animateLetter={animateLetterFirst} />
+              <br />
+
+              <Link href={"design"}>
+                <AnimatedLine
+                  line={secondLine}
+                  animateLetter={animateLetterSecond}
+                  setAnimateLetter={setAnimateLetterSecond}
+                  css={styles.second_line}
+                  foregroundColor={primaryColor}
+                  primaryColor={foregroundColor}
+                />
+              </Link>
+
+              <br />
+
+              <Link href={"pictures"}>
+                <AnimatedLine
+                  line={thirdLine}
+                  animateLetter={animateLetterThird}
+                  setAnimateLetter={setAnimateLetterThird}
+                  css={styles.third_line}
+                  foregroundColor={foregroundColor}
+                  primaryColor={primaryColor}
+                />
+              </Link>
+
+              <motion.div variants={variants4}>
+                <motion.div
+                  transition={{ scale: { type: "spring", stiffness: 500 } }}
+                  className={styles.forth_line}
+                  initial={{
+                    backgroundColor: "rgb(var(--secondary-dark-rgb)",
+                    color: "rgb(var(--foreground-rgb))",
+                    scale: 1,
+                    x: 10,
+                  }}
+                  whileHover={{
+                    color: "rgb(var(--light-rgb))",
+                    backgroundColor: "rgb(var(--primary-rgb))",
+                    scale: 1.2,
+                    x: 26,
+                  }}
+                >
+                  <Link href={"about"}>и другое</Link>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <Hero3D animateLetter={animateLetterFirst} />
+        </div>
 
         <div className={styles.line}></div>
       </main>

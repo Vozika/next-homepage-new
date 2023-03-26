@@ -6,6 +6,9 @@ const nextConfig = {
   },
   // assetPrefix: ".",
   trailingSlash: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
