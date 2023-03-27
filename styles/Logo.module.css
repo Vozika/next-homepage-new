@@ -11,7 +11,7 @@
     height: unset;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .logo {
        width: 90%;
        margin-top: 16px;

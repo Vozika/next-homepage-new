@@ -68,44 +68,44 @@ export default function Home() {
               initial="initial"
               animate="animate"
             >
-              <Link href={"code"}>
-                <AnimatedLine
-                  line={firstLine}
-                  animateLetter={animateLetterFirst}
-                  setAnimateLetter={setAnimateLetterFirst}
-                  css={styles.first_line}
-                  foregroundColor={foregroundColor}
-                  primaryColor={primaryColor}
-                />
-              </Link>
+              <AnimatedLine
+                line={firstLine}
+                animateLetter={animateLetterFirst}
+                setAnimateLetter={setAnimateLetterFirst}
+                css={styles.first_line}
+                foregroundColor={foregroundColor}
+                primaryColor={primaryColor}
+                link={"code"}
+              />
 
               <br />
 
-              <Link href={"design"}>
-                <AnimatedLine
-                  line={secondLine}
-                  animateLetter={animateLetterSecond}
-                  setAnimateLetter={setAnimateLetterSecond}
-                  css={styles.second_line}
-                  foregroundColor={primaryColor}
-                  primaryColor={foregroundColor}
-                />
-              </Link>
+              <AnimatedLine
+                line={secondLine}
+                animateLetter={animateLetterSecond}
+                setAnimateLetter={setAnimateLetterSecond}
+                css={styles.second_line}
+                foregroundColor={primaryColor}
+                primaryColor={foregroundColor}
+                link={"design"}
+              />
 
               <br />
 
-              <Link href={"pictures"}>
-                <AnimatedLine
-                  line={thirdLine}
-                  animateLetter={animateLetterThird}
-                  setAnimateLetter={setAnimateLetterThird}
-                  css={styles.third_line}
-                  foregroundColor={foregroundColor}
-                  primaryColor={primaryColor}
-                />
-              </Link>
+              <AnimatedLine
+                line={thirdLine}
+                animateLetter={animateLetterThird}
+                setAnimateLetter={setAnimateLetterThird}
+                css={styles.third_line}
+                foregroundColor={foregroundColor}
+                primaryColor={primaryColor}
+                link={"pictures"}
+              />
 
-              <motion.div variants={variants4}>
+              <motion.div
+                variants={variants4}
+                className={styles.forth_line_container}
+              >
                 <motion.div
                   transition={{ scale: { type: "spring", stiffness: 500 } }}
                   className={styles.forth_line}
@@ -113,7 +113,7 @@ export default function Home() {
                     backgroundColor: "rgb(var(--secondary-dark-rgb)",
                     color: "rgb(var(--foreground-rgb))",
                     scale: 1,
-                    x: 10,
+                    x: 6,
                   }}
                   whileHover={{
                     color: "rgb(var(--light-rgb))",
@@ -127,7 +127,9 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </div>
-          <Hero3D animateLetter={animateLetterFirst} />
+          <div className={styles.hero3d}>
+            <Hero3D animateLetter={animateLetterFirst} />
+          </div>
         </div>
 
         <div className={styles.line}></div>

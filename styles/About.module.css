@@ -79,7 +79,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .text_accent {
         position: relative;
         left: 0px;

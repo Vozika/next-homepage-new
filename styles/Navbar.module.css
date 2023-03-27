@@ -35,7 +35,7 @@
     color: rgb(var(--primary-rgb));
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 810px) {
     .main {
         margin-top: 32px;
         gap: 10px;
