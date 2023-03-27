@@ -36,7 +36,7 @@ const code_data: Code[] = [
     title: "Capital Quiz App 3",
     text: "Третья версия приложения, переписанная на Typescript. Добавлены новые возможности: поиск по странам и столицам, флаги государств, новая анимация. Основной алгоритм остаётся прежним, здесь коренных изменений нет. Material UI используется для элементов интерфейса по-прежнему.",
     url: "newquiz3",
-    github_url: "new-quiz-app",
+    github_url: "mega-quiz-ts",
     tech: {
       react: true,
       typescript: true,
