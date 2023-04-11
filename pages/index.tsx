@@ -55,8 +55,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href="https://www.vozika.ru/favicon.ico"
-          type="image/x-icon"
+          href="https://www.vozika.ru/favicon.svg"
+          type="image/svg+xml"
         />
       </Head>
       <main className={styles.main}>
