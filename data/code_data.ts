@@ -10,7 +10,7 @@ export interface Tech {
   framer?: boolean | undefined;
 }
 
-interface Code {
+export interface Code {
   id: number;
   title: string;
   text: string;
